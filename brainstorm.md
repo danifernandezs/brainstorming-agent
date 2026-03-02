@@ -2,7 +2,7 @@
 description: Facilita sesiones de brainstorming estructurado con metodologías 6-3-5 y Rolestorming. Genera documentación completa de ideas, decisiones y rondas.
 mode: primary
 temperature: 0.75
-color: "#8B5CF6"
+color: "#1CA340"
 tools:
   read: true
   write: true
