@@ -1,147 +1,147 @@
 # Brainstorming Planner Agent
 
-Agente primario para OpenCode que facilita sesiones de brainstorming estructurado con metodologias 6-3-5 y Rolestorming.
+A primary agent for OpenCode that facilitates structured brainstorming sessions using 6-3-5 and Rolestorming methodologies.
 
-## Caracteristicas
+## Features
 
-- **Dos metodologias**: 6-3-5 (Brainwriting) y Rolestorming
-- **Loop iterativo**: Continua hasta que digas "basta"
-- **Muchas preguntas**: Recopila todo el contexto necesario
-- **Documentacion automatica**: Genera archivo .md con toda la sesion
-- **Priorizacion**: Ayuda a identificar las mejores ideas
-- **Creatividad alta**: Temperature 0.75 para ideas originales
+- **Two methodologies**: 6-3-5 (Brainwriting) and Rolestorming
+- **Iterative loop**: Continues until you say "stop"
+- **Thorough questioning**: Gathers all necessary context
+- **Automatic documentation**: Generates .md file with full session
+- **Prioritization**: Helps identify the best ideas
+- **High creativity**: Temperature 0.75 for original ideas
 
-## Instalacion
+## Installation
 
-### Global (recomendado)
+### Global (recommended)
 
 ```bash
 mkdir -p ~/.config/opencode/agents
 cp brainstorm.md ~/.config/opencode/agents/
 ```
 
-### Por proyecto
+### Per-project
 
 ```bash
 mkdir -p .opencode/agents
 cp brainstorm.md .opencode/agents/
 ```
 
-## Uso
+## Usage
 
-En OpenCode:
+In OpenCode:
 
-1. Presiona `Tab` para cambiar de agente
-2. Selecciona "brainstorm"
-3. Escribe tu tema o problema
+1. Press `Tab` to switch agents
+2. Select "brainstorm"
+3. Type your topic or problem
 
-O invoca directamente:
+Or invoke directly:
 
 ```
-@brainstorm Necesito ideas para mejorar la retencion de usuarios
+@brainstorm I need ideas to improve user retention
 ```
 
-## Metodologias
+## Methodologies
 
 ### 6-3-5 (Brainwriting)
 
-Tecnica de generacion de ideas en rondas:
+Idea generation technique in rounds:
 
-- Generas 3 ideas iniciales
-- Cada ronda construye sobre las anteriores
-- Sin limite de tiempo
-- Registra decisiones por ronda
-- Continua hasta que quieras parar
+- You generate 3 initial ideas
+- Each round builds on previous ones
+- No time limit
+- Records decisions per round
+- Continues until you want to stop
 
-Ideal para: Generar muchas ideas rapidamente, explorar variaciones.
+Best for: Generating many ideas quickly, exploring variations.
 
 ### Rolestorming
 
-Tecnica de perspectivas multiples:
+Multiple perspectives technique:
 
-- El agente adopta un rol/persona
-- Anuncia el rol ANTES de cada ronda
-- Genera ideas desde esa perspectiva
-- Cambia de rol en cada iteracion
-- Sintetiza todas las perspectivas al final
+- The agent adopts a role/persona
+- Announces the role BEFORE each round
+- Generates ideas from that perspective
+- Changes role in each iteration
+- Synthesizes all perspectives at the end
 
-Roles tipicos: Usuario novato, experto, competidor, inversor, critico, etc.
+Typical roles: Novice user, expert, competitor, investor, critic, etc.
 
-Ideal para: Ver problemas desde angulos inesperados, empatizar con usuarios.
+Best for: Seeing problems from unexpected angles, empathizing with users.
 
-## Flujo de una Sesion
+## Session Flow
 
 ```
 1. SETUP
-   - Preguntas de contexto
-   - Elegir metodologia (A o B)
+   - Context questions
+   - Choose methodology (A or B)
 
-2. EJECUCION
-   - Rondas de ideas segun metodologia
-   - Decisiones registradas por ronda
+2. EXECUTION
+   - Idea rounds according to methodology
+   - Decisions recorded per round
 
-3. SINTESIS
-   - Consolidar todas las ideas
-   - Categorizar
-   - Priorizar
+3. SYNTHESIS
+   - Consolidate all ideas
+   - Categorize
+   - Prioritize
 
-4. DOCUMENTACION
-   - Crear archivo brainstorm-[tema]-[fecha].md
-   - Incluye: contexto, rondas, decisiones, priorizacion, proximos pasos
+4. DOCUMENTATION
+   - Create brainstorm-[topic]-[date].md file
+   - Includes: context, rounds, decisions, prioritization, next steps
 
 5. LOOP
-   - Continuar iterando o cerrar sesion
+   - Continue iterating or close session
 ```
 
 ## Output
 
-Cada sesion genera un archivo markdown:
+Each session generates a markdown file:
 
 ```
-brainstorm-[tema-slug]-YYYYMMDD.md
+brainstorm-[topic-slug]-YYYYMMDD.md
 ```
 
-Contenido:
-- Contexto y preguntas
-- Todas las rondas con decisiones
-- Lista completa de ideas
-- Categorizacion
-- Top ideas priorizadas
-- Conclusiones
-- Proximos pasos accionables
+Contents:
+- Context and questions
+- All rounds with decisions
+- Complete list of ideas
+- Categorization
+- Top prioritized ideas
+- Conclusions
+- Actionable next steps
 
-## Ejemplo Rapido
+## Quick Example
 
 ```
-USUARIO: @brainstorm Ideas para nombre de app de productividad
+USER: @brainstorm Ideas for productivity app name
 
-AGENTE: Hola! Vamos a encontrar el nombre perfecto.
+AGENT: Hi! Let's find the perfect name.
 
-Preguntas rapidas:
-1. Que hace tu app?
-2. Tono: serio o divertido?
-3. Idioma preferido?
+Quick questions:
+1. What does your app do?
+2. Tone: serious or fun?
+3. Preferred language?
 
-Metodologia?
-A) 6-3-5 - Generar muchos nombres
-B) Rolestorming - Ver desde perspectivas de usuarios
+Methodology?
+A) 6-3-5 - Generate many names
+B) Rolestorming - See from user perspectives
 
-USUARIO: A, es gestor de tareas, tono minimalista, ingles
+USER: A, it's a task manager, minimalist tone, English
 
-AGENTE: Perfecto! 6-3-5 con estilo minimalista.
+AGENT: Perfect! 6-3-5 with minimalist style.
 
-RONDA 1 - Escribe 3 nombres:
+ROUND 1 - Write 3 names:
 1. ...
 2. ...
 3. ...
 ```
 
-## Requisitos
+## Requirements
 
-- OpenCode instalado
-- Proveedor configurado (Z.AI, Anthropic, etc.)
+- OpenCode installed
+- Configured provider (Z.AI, Anthropic, etc.)
 
-## Licencia
+## License
 
 This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
