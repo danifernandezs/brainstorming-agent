@@ -1,0 +1,17 @@
+# Brainstorming Planner Agent
+
+> A primary agent for OpenCode that facilitates structured brainstorming sessions using 6-3-5 Brainwriting and Rolestorming methodologies. Generates complete documentation of ideas, decisions, and rounds. Temperature 0.75 for creative output.
+
+## Agent
+
+- [brainstorm.md](https://raw.githubusercontent.com/danifernandezs/brainstorming-agent/main/brainstorm.md): The agent configuration file. Copy this into ~/.config/opencode/agents/ (global) or .opencode/agents/ (per-project) to install.
+
+## Documentation
+
+- [README.md](https://raw.githubusercontent.com/danifernandezs/brainstorming-agent/main/README.md): Full documentation — installation, usage, methodology details, session flow, and examples.
+- [CHANGELOG.md](https://raw.githubusercontent.com/danifernandezs/brainstorming-agent/main/CHANGELOG.md): Version history and release notes.
+
+## Optional
+
+- [README-es.md](https://raw.githubusercontent.com/danifernandezs/brainstorming-agent/main/README-es.md): Spanish documentation.
+- [LICENSE.txt](https://raw.githubusercontent.com/danifernandezs/brainstorming-agent/main/LICENSE.txt): CC BY-SA 4.0 license (Attribution-ShareAlike).
