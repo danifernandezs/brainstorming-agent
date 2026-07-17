@@ -7,18 +7,18 @@
 
 [English](README.md) | [Español](README-es.md)
 
-Agente primario para OpenCode que facilita sesiones de brainstorming estructurado con metodologias 6-3-5 y Rolestorming.
+Agente primario para OpenCode que facilita sesiones de brainstorming estructurado con metodologías 6-3-5 y Rolestorming.
 
-## Caracteristicas
+## Características
 
-- **Dos metodologias**: 6-3-5 (Brainwriting) y Rolestorming
-- **Loop iterativo**: Continua hasta que digas "basta"
+- **Dos metodologías**: 6-3-5 (Brainwriting) y Rolestorming
+- **Loop iterativo**: Continúa hasta que digas "basta"
 - **Muchas preguntas**: Recopila todo el contexto necesario
-- **Documentacion automatica**: Genera archivo .md con toda la sesion
-- **Priorizacion**: Ayuda a identificar las mejores ideas
+- **Documentación automática**: Genera archivo .md con toda la sesión
+- **Priorización**: Ayuda a identificar las mejores ideas
 - **Creatividad alta**: Temperature 0.75 para ideas originales
 
-## Instalacion
+## Instalación
 
 ### Global (recomendado)
 
@@ -45,59 +45,59 @@ En OpenCode:
 O invoca directamente:
 
 ```
-@brainstorm Necesito ideas para mejorar la retencion de usuarios
+@brainstorm Necesito ideas para mejorar la retención de usuarios
 ```
 
-## Metodologias
+## Metodologías
 
 ### 6-3-5 (Brainwriting)
 
-Tecnica de generacion de ideas en rondas:
+Técnica de generación de ideas en rondas:
 
 - Generas 3 ideas iniciales
 - Cada ronda construye sobre las anteriores
-- Sin limite de tiempo
+- Sin límite de tiempo
 - Registra decisiones por ronda
-- Continua hasta que quieras parar
+- Continúa hasta que quieras parar
 
-Ideal para: Generar muchas ideas rapidamente, explorar variaciones.
+Ideal para: Generar muchas ideas rápidamente, explorar variaciones.
 
 ### Rolestorming
 
-Tecnica de perspectivas multiples:
+Técnica de perspectivas múltiples:
 
 - El agente adopta un rol/persona
 - Anuncia el rol ANTES de cada ronda
 - Genera ideas desde esa perspectiva
-- Cambia de rol en cada iteracion
+- Cambia de rol en cada iteración
 - Sintetiza todas las perspectivas al final
 
-Roles tipicos: Usuario novato, experto, competidor, inversor, critico, etc.
+Roles típicos: Usuario novato, experto, competidor, inversor, crítico, etc.
 
-Ideal para: Ver problemas desde angulos inesperados, empatizar con usuarios.
+Ideal para: Ver problemas desde ángulos inesperados, empatizar con usuarios.
 
-## Flujo de una Sesion
+## Flujo de una Sesión
 
 ```
 1. SETUP
    - Preguntas de contexto
-   - Elegir metodologia (A o B)
+   - Elegir metodología (A o B)
 
-2. EJECUCION
-   - Rondas de ideas segun metodologia
+2. EJECUCIÓN
+   - Rondas de ideas según metodología
    - Decisiones registradas por ronda
 
-3. SINTESIS
+3. SÍNTESIS
    - Consolidar todas las ideas
    - Categorizar
    - Priorizar
 
-4. DOCUMENTACION
+4. DOCUMENTACIÓN
    - Crear archivo brainstorm-[tema]-[fecha].md
-   - Incluye: contexto, rondas, decisiones, priorizacion, proximos pasos
+   - Incluye: contexto, rondas, decisiones, priorización, próximos pasos
 
 5. LOOP
-   - Continuar iterando o cerrar sesion
+   - Continuar iterando o cerrar sesión
 ```
 
 ## Output
@@ -112,28 +112,28 @@ Contenido:
 - Contexto y preguntas
 - Todas las rondas con decisiones
 - Lista completa de ideas
-- Categorizacion
+- Categorización
 - Top ideas priorizadas
 - Conclusiones
-- Proximos pasos accionables
+- Próximos pasos accionables
 
-## Ejemplo Rapido
+## Ejemplo Rápido
 
 ```
 USUARIO: @brainstorm Ideas para nombre de app de productividad
 
 AGENTE: Hola! Vamos a encontrar el nombre perfecto.
 
-Preguntas rapidas:
-1. Que hace tu app?
+Preguntas rápidas:
+1. Qué hace tu app?
 2. Tono: serio o divertido?
 3. Idioma preferido?
 
-Metodologia?
+Metodología?
 A) 6-3-5 - Generar muchos nombres
 B) Rolestorming - Ver desde perspectivas de usuarios
 
-USUARIO: A, es gestor de tareas, tono minimalista, ingles
+USUARIO: A, es gestor de tareas, tono minimalista, inglés
 
 AGENTE: Perfecto! 6-3-5 con estilo minimalista.
 
@@ -154,6 +154,6 @@ Las contribuciones son bienvenidas.
 
 ## Licencia
 
-This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Please read the [LICENSE](LICENSE.txt) file for more details.
