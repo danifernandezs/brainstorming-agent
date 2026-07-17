@@ -1,5 +1,6 @@
 # Brainstorming Planner Agent
 
+[![Ver en GitHub](https://img.shields.io/badge/Ver%20en-GitHub-181717.svg?logo=github)](https://github.com/danifernandezs/brainstorming-agent)
 ![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-1CA340.svg)
 ![Versión](https://img.shields.io/badge/versión-1.0.0-1CA340.svg)
 ![OpenCode](https://img.shields.io/badge/OpenCode-agent-1CA340.svg)
