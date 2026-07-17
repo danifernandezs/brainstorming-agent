@@ -1,5 +1,11 @@
 # Brainstorming Planner Agent
 
+![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-1CA340.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-1CA340.svg)
+![OpenCode](https://img.shields.io/badge/OpenCode-agent-1CA340.svg)
+
+[English](README.md) | [Español](README-es.md)
+
 A primary agent for OpenCode that facilitates structured brainstorming sessions using 6-3-5 and Rolestorming methodologies.
 
 ## Features
@@ -140,6 +146,10 @@ ROUND 1 - Write 3 names:
 
 - OpenCode installed
 - Configured provider (Z.AI, Anthropic, etc.)
+
+## Contributing
+
+Contributions are welcome.
 
 ## License
 
