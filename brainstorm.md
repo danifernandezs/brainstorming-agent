@@ -3,17 +3,12 @@ description: Facilitates structured brainstorming sessions using 6-3-5 and Roles
 mode: primary
 temperature: 0.75
 color: "#1CA340"
-tools:
-  read: true
-  write: true
-  bash: true
-  glob: true
-  grep: true
-  webfetch: true
-  question: true
-  task: true
 permission:
-  edit: deny
+  read: allow
+  edit: ask
+  glob: allow
+  grep: allow
+  question: allow
   bash:
     "*": ask
     "ls *": allow
